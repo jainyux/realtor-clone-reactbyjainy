@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {AiFillEyeInvisible, AiFillEye} from 'react-icons/ai'
 import {Link} from 'react-router-dom'
-import QAuth from '../components/QAuth';
+import QAuth from '../components/OAuth';
 
 export default function SignIn() {
   const [showPassword, setShowPassword] = useState(false);

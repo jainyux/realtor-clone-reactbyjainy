@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {AiFillEyeInvisible, AiFillEye} from 'react-icons/ai'
 import {Link, useNavigate} from 'react-router-dom'
-import QAuth from '../components/QAuth';
+import OAuth from '../components/OAuth';
 import {getAuth, createUserWithEmailAndPassword, updateProfile} from 'firebase/auth'
 import {db} from '../firebase'
 import { doc, serverTimestamp, setDoc } from 'firebase/firestore';
@@ -80,7 +80,7 @@ try {
           <div className='flex items-center my-4 before:border-t  before:flex-1  before:border-gray-300 after:border-t  after:flex-1  after:border-gray-300'>
             <p className='text-center font-semibold mx-4'>OR</p>
         </div>
-        <QAuth/>
+        <OAuth/>
           </form>
           
           
